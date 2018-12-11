@@ -1,0 +1,10 @@
+ dpkg-buildpackage -D -us -uc -ui -b -Jauto -Pnobiarch,nocheck,nodoc
+dpkg-buildpackage: info: source package dh-exec
+dpkg-buildpackage: info: source version 0.24
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Gergely Nagy <algernon@madhouse-project.org>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-checkbuilddeps: error: Unmet build dependencies: libpipeline-dev bats
+dpkg-buildpackage: warning: build dependencies/conflicts unsatisfied; aborting
+dpkg-buildpackage: warning: (Use -d flag to override.)

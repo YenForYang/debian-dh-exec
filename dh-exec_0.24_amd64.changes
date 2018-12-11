@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Fri, 07 Oct 2016 11:30:20 +0200
+Source: dh-exec
+Binary: dh-exec
+Built-For-Profiles: nobiarch nocheck
+Architecture: amd64
+Version: 0.24
+Distribution: unstable
+Urgency: medium
+Maintainer: Gergely Nagy <algernon@madhouse-project.org>
+Changed-By: Gergely Nagy <algernon@madhouse-project.org>
+Description:
+ dh-exec    - Scripts to help with executable debhelper files
+Closes: 498067 831786
+Changes:
+ dh-exec (0.24) unstable; urgency=medium
+ .
+   * Add support for moving files to a package, instead of copying. Thanks
+     to Barak A. Pearlmutter and Niels Thykier for the report and bringing
+     the request to my attention. (Closes: #498067)
+   * Fix the combination of dh_install --fail-missing, dh-exec and
+     arch-only/arch-indep builds. Thanks to Ferenc Wágner for the report.
+     (Closes: #831786)
+   * Bump Standards-Version to 3.9.8, no changes required.
+Checksums-Sha1:
+ 4c40c4940ec0c829d51dfa36d3c5e05b8909d285 24036 dh-exec-dbgsym_0.24_amd64.deb
+ 398117ee64fc48f0f3aa9f644106fad3b9d8e97a 5323 dh-exec_0.24_amd64.buildinfo
+ 09b502bbcfa7ba622a60052ed52fadc72398560d 45980 dh-exec_0.24_amd64.deb
+Checksums-Sha256:
+ 0256a95d717e32bfd1c30130651c1ab75476817b945dd9a470a62c8309a4449b 24036 dh-exec-dbgsym_0.24_amd64.deb
+ 2757c6d60635e1fe7971cf4d9f26b69a7ad10339d836f5bc66a48579f456ebc7 5323 dh-exec_0.24_amd64.buildinfo
+ 60738c0e4c14ea24dd54e046630576d2895a7a8e3ae55d41e244199cf4d796bb 45980 dh-exec_0.24_amd64.deb
+Files:
+ 699f8217cef7391ee509ec1f7c43be66 24036 debug optional dh-exec-dbgsym_0.24_amd64.deb
+ c159f97242277f9e12a1722ab885cdaf 5323 devel extra dh-exec_0.24_amd64.buildinfo
+ 265c4828a91cf38d1dd85aef540be54c 45980 devel extra dh-exec_0.24_amd64.deb
